@@ -60,3 +60,18 @@ div#ContentOverlord #ContentSidebar #ShowResultsFor {
       padding-top: 6px; }
     div#ContentOverlord #ContentSidebar #ShowResultsFor ol#AllCategories li:hover {
       text-decoration: underline; }
+
+footer #Bottom {
+  font-size: 12px; }
+  footer #Bottom a {
+    color: #666; }
+  footer #Bottom .ButBot {
+    display: inline;
+    border: 1px solid #E2E2E2;
+    padding: 5px; }
+    footer #Bottom .ButBot #Help {
+      margin-left: 40px; }
+  footer #Bottom #Copyright li {
+    display: inline;
+    padding-left: 20px;
+    font-size: 12px; }

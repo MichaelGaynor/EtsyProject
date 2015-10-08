@@ -90,7 +90,9 @@ div#ContentOverlord{
       }
     }
     #RefineSearch{
-
+      input{
+        
+      }
     }
   }
   #ContentMain{
@@ -103,3 +105,33 @@ div#ContentOverlord{
   }
 }
 
+
+footer{
+  #EmailSign{
+
+  }
+  #Links{
+
+  }
+  #Bottom{
+    font-size: 12px;
+    a{
+      color: #666;
+    }
+    .ButBot{
+      display: inline;
+      border: 1px solid #E2E2E2;
+      padding: 5px;
+      #Help{
+        margin-left: 40px;
+      }
+    }
+    #Copyright{
+      li{
+        display: inline;
+        padding-left: 20px;
+        font-size: 12px;
+      }
+    }
+  }
+}

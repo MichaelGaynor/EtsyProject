@@ -53,11 +53,26 @@
           <a href="#"><li>Pet Supplies</li></a>
         </ul>
       </div>
-      <div id="RefineSearch">
+      <div id="RefineSearch">Refine your search
+        <div>Item Type<br>
+          <input type='radio'>All Items<br>
+          <input type='radio'>Handmade<br>
+          <input type='radio'>Vintage<br>
+        </div>
       </div>
     </div>
     <div id="ContentMain">
-      <div></div>  
+      <div id="TheScript">
+        <script type="text/template" id="info-template">
+          <div class="SingleItem">
+            <li class="image"><%= Images %></li>
+            <li class="title"><%= title %></li>
+            <li class="url"><%= url %></li>
+            <li class="price"><%= price %></li>
+            <li class="currency-code"><%= currency_code %></li>
+          </div>
+        </script>
+      </div>  
     </div>
     <div id="ContentRelated">  
     </div>
@@ -74,7 +89,16 @@
     </div>
     <div id="Links"> 
     </div>
-    <div id="Bottom"> 
+    <div id="Bottom">
+      <a id="UnitedStates" href="#"><div class="ButBot">United States</div></a>
+      <a id="English" href="#"><div class="ButBot">English (US)</div></a>
+      <a id="USD" href="#"><div class="ButBot">$ USD</div></a> 
+      <a id="Help" href="#"><div class="ButBot">Help</div></a>
+      <ul id="Copyright">Copyright
+        <a href="#"><li>Legal</li></a>
+        <a href="#"><li>Privacy</li></a>
+        <a href="#"><li>Interest-based ads</li></a>
+      </ul>
     </div>
   </footer>
 

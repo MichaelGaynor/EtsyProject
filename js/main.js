@@ -4,7 +4,7 @@
   // console.log($);
   // console.log(_);
 
-var theItems = items;
+var theItems = etsy;
 // console.dir(items);
 
 // _.each(theItems, function(i){
@@ -15,12 +15,20 @@ var theItems = items;
 //   return "The Price is " + i.price
 // });
 
+//TEMPLATE STRING
 var itemTemplate = $('#info-template').text();
 
+//MAKE TEMPLATE FUNCTION
 var renderTemplate = _.template(itemTemplate);
 
-_.each(theItems.results, function(i){
-  console.log(i);
+
+_.each(etsy.results, function(i){
+
+var freshHTML = renderTemplate(i);
+
+$('#TheScript').append(freshHTML);
+
 });
+
 
 }());

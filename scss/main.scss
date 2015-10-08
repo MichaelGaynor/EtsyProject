@@ -21,22 +21,26 @@ nav li{
 
 nav{
   background-color: #FFFFFF;
-  display: inline;
+  // display: inline-block;
   #Search{
     border-bottom: 1px solid #E1E3DF;
-    display: inline;
+    // display: inline-block;
     #Logo{
-      width: 10%;
       color: #F56400;
       font-size: 30px;
-      margin: 50px;
-      display: inline;
+      margin: 25px;
+      margin-top: 25px;
+      background-color: blue;
+      // display: inline-block;
     }
     #SearchBar{
-      width: 10%;
-      display: inline;
+      // display: inline-block;
+      background-color:red;
+      width: 100px;
+      height: 40px;
     }
     #HorizontalTop{
+      background-color: green;
       li{
         color: #0092B5;
       }
@@ -45,7 +49,9 @@ nav{
       }
     }
     #Cart{
-      width: 10%;
+      background-color: cyan;
+      height: 40px;
+      width: 50px;
     }
   }//End of #Search
 
@@ -90,12 +96,30 @@ div#ContentOverlord{
       }
     }
     #RefineSearch{
-      input{
-        
+      padding: 20px;
+      margin-left: 30px;
+      div{
+        border-radius: 3px;
+        border: 1px solid #E1E3DF;
+        background-color: #FFFFFF;
+        width: 245px;
+        height: 408;
+        padding: 10px;
+        input{
+          color: #0092B5;
+          padding-left: 12px;
+          padding-bottom: 6px;
+          padding-top: 6px;
+        }
       }
     }
   }
   #ContentMain{
+    #TheScript{
+      .SingleItem{
+        width: 150;
+      }
+    }
   }
   #ContentRelated{
   }
@@ -106,32 +130,36 @@ div#ContentOverlord{
 }
 
 
-footer{
-  #EmailSign{
+// footer{
+//   #EmailSign{
 
-  }
-  #Links{
+//   }
+//   #Links{
 
-  }
-  #Bottom{
-    font-size: 12px;
-    a{
-      color: #666;
-    }
-    .ButBot{
-      display: inline;
-      border: 1px solid #E2E2E2;
-      padding: 5px;
-      #Help{
-        margin-left: 40px;
-      }
-    }
-    #Copyright{
-      li{
-        display: inline;
-        padding-left: 20px;
-        font-size: 12px;
-      }
-    }
-  }
-}
+//   }
+//   #Bottom{
+//     font-size: 12px;
+//     a{
+//       color: #666;
+//     }
+//     .ButBot{
+//       display: inline;
+//       border: 1px solid #E2E2E2;
+//       padding: 5px;
+//       margin-right: auto;
+//       margin-left: auto;
+//       #Help{
+//         margin-left: 40px;
+//         font-weight: bolder;
+//       }
+//     }
+//     #Copyright{
+//       text-align: center;
+//       li{
+//         display: inline;
+//         padding-left: 20px;
+//         font-size: 12px;
+//       }
+//     }
+//   }
+// }

@@ -15,26 +15,29 @@ nav li {
   padding: 10px; }
 
 nav {
-  background-color: #FFFFFF;
-  display: inline; }
+  background-color: #FFFFFF; }
   nav #Search {
-    border-bottom: 1px solid #E1E3DF;
-    display: inline; }
+    border-bottom: 1px solid #E1E3DF; }
     nav #Search #Logo {
-      width: 10%;
       color: #F56400;
       font-size: 30px;
-      margin: 50px;
-      display: inline; }
+      margin: 25px;
+      margin-top: 25px;
+      background-color: blue; }
     nav #Search #SearchBar {
-      width: 10%;
-      display: inline; }
-    nav #Search #HorizontalTop li {
-      color: #0092B5; }
-    nav #Search #HorizontalTop li:hover {
-      text-decoration: underline; }
+      background-color: red;
+      width: 100px;
+      height: 40px; }
+    nav #Search #HorizontalTop {
+      background-color: green; }
+      nav #Search #HorizontalTop li {
+        color: #0092B5; }
+      nav #Search #HorizontalTop li:hover {
+        text-decoration: underline; }
     nav #Search #Cart {
-      width: 10%; }
+      background-color: cyan;
+      height: 40px;
+      width: 50px; }
   nav #CategoriesBar {
     border-bottom: 1px solid #E1E3DF; }
     nav #CategoriesBar #Categories li {
@@ -61,17 +64,21 @@ div#ContentOverlord #ContentSidebar #ShowResultsFor {
     div#ContentOverlord #ContentSidebar #ShowResultsFor ol#AllCategories li:hover {
       text-decoration: underline; }
 
-footer #Bottom {
-  font-size: 12px; }
-  footer #Bottom a {
-    color: #666; }
-  footer #Bottom .ButBot {
-    display: inline;
-    border: 1px solid #E2E2E2;
-    padding: 5px; }
-    footer #Bottom .ButBot #Help {
-      margin-left: 40px; }
-  footer #Bottom #Copyright li {
-    display: inline;
-    padding-left: 20px;
-    font-size: 12px; }
+div#ContentOverlord #ContentSidebar #RefineSearch {
+  padding: 20px;
+  margin-left: 30px; }
+  div#ContentOverlord #ContentSidebar #RefineSearch div {
+    border-radius: 3px;
+    border: 1px solid #E1E3DF;
+    background-color: #FFFFFF;
+    width: 245px;
+    height: 408;
+    padding: 10px; }
+    div#ContentOverlord #ContentSidebar #RefineSearch div input {
+      color: #0092B5;
+      padding-left: 12px;
+      padding-bottom: 6px;
+      padding-top: 6px; }
+
+div#ContentOverlord #ContentMain #TheScript .SingleItem {
+  width: 150; }

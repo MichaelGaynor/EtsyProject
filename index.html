@@ -58,6 +58,8 @@
           <input type='radio'>All Items<br>
           <input type='radio'>Handmade<br>
           <input type='radio'>Vintage<br>
+          <hr>
+          <p>Price</p>
         </div>
       </div>
     </div>
@@ -65,7 +67,7 @@
       <div id="TheScript">
         <script type="text/template" id="info-template">
           <div class="SingleItem">
-            <li class="image"><%= Images %></li>
+            <img src="<%= Images[0].url_75x75 %>">
             <li class="title"><%= title %></li>
             <li class="url"><%= url %></li>
             <li class="price"><%= price %></li>
@@ -84,7 +86,7 @@
     </div>
   </div>
 
-  <footer>
+<!--   <footer>
     <div id="EmailSign"> 
     </div>
     <div id="Links"> 
@@ -100,7 +102,7 @@
         <a href="#"><li>Interest-based ads</li></a>
       </ul>
     </div>
-  </footer>
+  </footer> -->
 
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>

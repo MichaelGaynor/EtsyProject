@@ -8,49 +8,66 @@ a {
 
 li {
   list-style-type: none;
-  font-size: 14px; }
+  font-size: 13px; }
 
 nav li {
   display: inline;
   padding: 10px; }
 
 nav {
-  background-color: #FFFFFF; }
-  nav #Search {
-    border-bottom: 1px solid #E1E3DF; }
-    nav #Search #Logo {
-      color: #F56400;
-      font-size: 30px;
-      margin: 25px;
-      margin-top: 25px;
-      background-color: blue; }
-    nav #Search #SearchBar {
-      background-color: red;
-      width: 100px;
-      height: 40px; }
-    nav #Search #HorizontalTop {
-      background-color: green; }
-      nav #Search #HorizontalTop li {
-        color: #0092B5; }
-      nav #Search #HorizontalTop li:hover {
-        text-decoration: underline; }
-    nav #Search #Cart {
-      background-color: cyan;
-      height: 40px;
-      width: 50px; }
+  background-color: #FFFFFF;
+  display: inline-block; }
+  nav #Search #Logo {
+    color: #F56400;
+    font-size: 30px;
+    margin: 25px;
+    margin-top: 25px;
+    float: left; }
+  nav #Search #SearchBar {
+    margin-top: 32px;
+    float: left; }
+    nav #Search #SearchBar #SearchInput {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px; }
+    nav #Search #SearchBar #SearchButton {
+      background-color: #34A8C4;
+      color: #FFFFFF;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px; }
+  nav #Search #HorizontalTop {
+    text-align: right;
+    width: 30%;
+    float: left;
+    margin-top: 35px; }
+    nav #Search #HorizontalTop li {
+      color: #0092B5; }
+    nav #Search #HorizontalTop li:hover {
+      text-decoration: underline; }
+    nav #Search #HorizontalTop #SignIn {
+      border: 1px solid #0092B5;
+      border-radius: 3px; }
+  nav #Search #Cart {
+    color: #888888;
+    width: 50px;
+    margin-top: 35px;
+    float: right; }
   nav #CategoriesBar {
     border-bottom: 1px solid #E1E3DF; }
-    nav #CategoriesBar #Categories li {
-      color: #585858;
-      font-weight: lighter; }
-    nav #CategoriesBar #Categories li:hover {
-      color: black; }
+    nav #CategoriesBar #Categories {
+      float: right; }
+      nav #CategoriesBar #Categories li {
+        color: #585858;
+        font-weight: lighter; }
+      nav #CategoriesBar #Categories li:hover {
+        color: black; }
 
 div#ContentOverlord #ContentSidebar {
   float: left; }
   div#ContentOverlord #ContentSidebar #ShowResultsFor {
     padding: 20px;
-    margin-left: 30px; }
+    margin-left: 30px;
+    background-color: #F5F5F1;
+    border: none; }
     div#ContentOverlord #ContentSidebar #ShowResultsFor ol#AllCategories {
       border-radius: 3px;
       border: 1px solid #E1E3DF;
@@ -67,32 +84,40 @@ div#ContentOverlord #ContentSidebar {
   div#ContentOverlord #ContentSidebar #RefineSearch {
     padding: 20px;
     margin-left: 30px;
-    height: 1200px; }
-    div#ContentOverlord #ContentSidebar #RefineSearch div {
-      border-radius: 3px;
-      border: 1px solid #E1E3DF;
-      background-color: #FFFFFF;
-      width: 245px;
-      height: 408;
-      padding: 10px; }
-      div#ContentOverlord #ContentSidebar #RefineSearch div input {
-        color: #0092B5;
-        padding-left: 12px;
-        padding-bottom: 6px;
-        padding-top: 6px; }
+    height: 1600px;
+    background-color: #F5F5F1;
+    border: none; }
+  div#ContentOverlord #ContentSidebar div {
+    border-radius: 3px;
+    border: 1px solid #E1E3DF;
+    background-color: #FFFFFF;
+    width: 245px;
+    height: 408;
+    padding: 10px;
+    font-size: 13px; }
+    div#ContentOverlord #ContentSidebar div input {
+      padding-left: 12px;
+      padding-bottom: 6px;
+      padding-top: 6px; }
 
-div#ContentOverlord #ContentMain #CatWhiskey {
+#ContentMain #CatWhiskey {
   float: left;
   margin: 6px 0;
-  width: 500px;
-  padding: 20px 0; }
+  width: 470px;
+  padding: 20px 0;
+  font-size: 13px; }
+  #ContentMain #CatWhiskey a {
+    color: #0092B5; }
+  #ContentMain #CatWhiskey a:hover {
+    text-decoration: underline; }
 
-div#ContentOverlord #ContentMain #SortBy {
-  float: right;
+#ContentMain #SortBy {
+  float: left;
   margin: 6px 0;
-  padding: 20px 0; }
+  padding: 20px 0;
+  font-size: 13px; }
 
-div#ContentOverlord #ContentMain #TheScript .SingleItem {
+#ContentMain #TheScript .SingleItem {
   width: 170px;
   height: 190px;
   overflow: hidden;
@@ -102,11 +127,24 @@ div#ContentOverlord #ContentMain #TheScript .SingleItem {
   float: left;
   border: 1px solid #666;
   border-radius: 3px;
-  font-size: 8px; }
+  font-size: 12px; }
 
-div#ContentOverlord #ContentRelated {
-  float: left; }
-  div#ContentOverlord #ContentRelated span {
+#RelatedWhiskey {
+  float: left;
+  width: 500px; }
+
+#ContentRelated {
+  float: left;
+  width: 500px; }
+  #ContentRelated span {
     font-weight: bolder; }
-  div#ContentOverlord #ContentRelated div {
-    width: 100px; }
+  #ContentRelated .RelList {
+    width: 150px;
+    float: left; }
+
+#ContentLooking {
+  width: 600px;
+  float: left;
+  font-size: 13px; }
+  #ContentLooking span {
+    color: #0092B5; }

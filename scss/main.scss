@@ -11,7 +11,7 @@ a{
 
 li{
   list-style-type: none;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 nav li{
@@ -21,37 +21,57 @@ nav li{
 
 nav{
   background-color: #FFFFFF;
-  // display: inline-block;
+  display: inline-block;
   #Search{
-    border-bottom: 1px solid #E1E3DF;
+    // border-bottom: 1px solid #E1E3DF;
     // display: inline-block;
     #Logo{
       color: #F56400;
       font-size: 30px;
       margin: 25px;
       margin-top: 25px;
-      background-color: blue;
+      float: left;
+      // background-color: blue;
       // display: inline-block;
     }
     #SearchBar{
-      // display: inline-block;
-      background-color:red;
-      width: 100px;
-      height: 40px;
+      margin-top: 32px;
+      float: left;
+      #SearchInput{
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; 
+      }
+      #SearchButton{
+        background-color: #34A8C4;
+        color: #FFFFFF;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
     }
     #HorizontalTop{
-      background-color: green;
+      // background-color: green;
+      text-align: right;
+      width: 30%;
+      float: left;
+      margin-top: 35px;
       li{
         color: #0092B5;
       }
       li:hover{
         text-decoration: underline;
       }
+      #SignIn{
+        border: 1px solid #0092B5;
+        border-radius: 3px;
+      }
     }
     #Cart{
-      background-color: cyan;
-      height: 40px;
+      // background-color: cyan;
+      // height: 40px;
+      color: #888888;
       width: 50px;
+      margin-top: 35px;
+      float: right;
     }
   }//End of #Search
 
@@ -60,6 +80,7 @@ nav{
     border-bottom: 1px solid #E1E3DF;        
 
     #Categories{
+      float: right;
       li{
         color: #585858;
         font-weight: lighter;
@@ -78,6 +99,8 @@ div#ContentOverlord{
     #ShowResultsFor{
       padding: 20px;
       margin-left: 30px;
+      background-color: #F5F5F1;
+      border: none;
       ol#AllCategories{
         border-radius: 3px;
         border: 1px solid #E1E3DF;
@@ -99,7 +122,10 @@ div#ContentOverlord{
     #RefineSearch{
       padding: 20px;
       margin-left: 30px;
-      height: 1200px;
+      height: 1600px;
+      background-color: #F5F5F1;
+      border: none;
+      }
       div{
         border-radius: 3px;
         border: 1px solid #E1E3DF;
@@ -107,8 +133,8 @@ div#ContentOverlord{
         width: 245px;
         height: 408;
         padding: 10px;
+        font-size: 13px;
         input{
-          color: #0092B5;
           padding-left: 12px;
           padding-bottom: 6px;
           padding-top: 6px;
@@ -120,13 +146,24 @@ div#ContentOverlord{
     #CatWhiskey{
       float: left;
       margin: 6px 0;
-      width: 500px;
+      width: 470px;
       padding: 20px 0;
+      font-size: 13px;
+      a{
+        color: #0092B5;        
+      }
+      // background-color:orange;
+      a:hover{
+        text-decoration: underline;
+      }
     }
     #SortBy{
-      float: right;
+      float: left;
       margin: 6px 0;
       padding: 20px 0;
+      font-size: 13px;
+      // background-color: cyan;
+
     }
     #TheScript{
       .SingleItem{
@@ -139,25 +176,40 @@ div#ContentOverlord{
         float: left;
         border: 1px solid #666;
         border-radius: 3px;
-        font-size: 8px;
+        font-size: 12px;
       }
     }
   }
+  #RelatedWhiskey{
+    float: left;
+    width: 500px;
+    // margin-left: 40px;
+  }
   #ContentRelated{
     float: left;
+    // display: inline;
+    // background-color: cyan;
+    width: 500px;
     span{
       font-weight: bolder;
     }
-    div{
-      width: 100px;
+.RelList{
+      width: 150px;
+      // background-color: red;
+      float: left;
+      // display: inline;
     }
   }
   #ContentLooking{
+    width: 600px;
+    float: left;
+    font-size: 13px;
+    span{
+      color: #0092B5;
+    }
   }
   #ContentPages{
   }
-}
-
 
 // footer{
 //   #EmailSign{

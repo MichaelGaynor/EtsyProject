@@ -10,11 +10,14 @@
   <nav>
     <div id="Search"> 
       <div><a href="#" id="Logo">Etsish</a></div>
-      <div id="SearchBar">Search</div>
+      <div id="SearchBar">
+        <input id="SearchInput">
+        <button id="SearchButton">Search</button>
+      </div>
       <ul id="HorizontalTop">
         <a href="#"><li>Sell on Etsish</li></a>
         <a href="#"><li>Register</li></a>
-        <a href="#"><li>Sign in</li></a>
+        <a href="#"><li id="SignIn">Sign in</li></a>
       </ul>
       <a href="#" id="Cart">Cart</a>
     </div>
@@ -81,7 +84,7 @@
       </div>
     </div>
     <div id="ContentMain">
-      <div id="CatWhiskey">All Categories > "whiskey" (25,499 Results)
+      <div id="CatWhiskey"><a href="#"> All Categories</a> > "whiskey" (25,499 Results)
       </div>
       <div id="SortBy">Sort by: Relevancy
       </div>
@@ -97,8 +100,13 @@
         </script>
       </div>  
     </div>
-    <div id="ContentRelated">Related to <span>whiskey</span>
-       <div>
+  </div>
+  <footer>
+    <div id="RelatedWhiskey">
+      Related to <span>whiskey</span>
+    </div>
+    <div id="ContentRelated">
+       <div class="RelList">
         <ul>
           <a href="#"><li>whiskey barrel</li></a>
           <a href="#"><li>whiskey decanter</li></a>
@@ -106,7 +114,7 @@
           <a href="#"><li>jack daniels</li></a>
         </ul>
       </div>
-      <div>
+      <div class="RelList">
         <ul>
           <a href="#"><li>bourbon</li></a>
           <a href="#"><li>scotch</li></a>
@@ -114,20 +122,22 @@
           <a href="#"><li>beer</li></a>
         </ul>
       </div>
-      <div>
+      <div class="RelList">
         <ul>
           <a href="#"><li>cigar</li></a>
           <a href="#"><li>flask</li></a>
         </ul>
       </div>
     </div>
-    <div id="ContentLooking">  
+    <div id="ContentLooking">
+      Looking for shops? <span>whiskeyweddingbells, WhiskeyDogWares, WhiskeysWhims. See more.</span>  
     </div>
-    <div id="ContentPages">  
+    <div id="ContentPages"> 
+       
     </div>
     <div id="">  
     </div>
-  </div>
+  </footer>
 
 <!--   <footer>
     <div id="EmailSign"> 

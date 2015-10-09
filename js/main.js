@@ -5,7 +5,7 @@
   // console.log(_);
 
 var theItems = etsy;
-// console.dir(items);
+// console.dir(etsy);
 
 // _.each(theItems, function(i){
 //   // console.log(i);

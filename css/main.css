@@ -22,18 +22,21 @@ nav {
     font-size: 30px;
     margin: 25px;
     margin-top: 25px;
+    margin-left: 50px;
     float: left; }
   nav #Search #SearchBar {
     margin-top: 32px;
     float: left; }
     nav #Search #SearchBar #SearchInput {
       border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px; }
+      border-bottom-left-radius: 3px;
+      border: 1px solid #888888; }
     nav #Search #SearchBar #SearchButton {
       background-color: #34A8C4;
       color: #FFFFFF;
       border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px; }
+      border-bottom-right-radius: 3px;
+      border: none; }
   nav #Search #HorizontalTop {
     text-align: right;
     width: 30%;
@@ -101,6 +104,38 @@ div#ContentOverlord #ContentSidebar {
       padding-left: 12px;
       padding-bottom: 6px;
       padding-top: 6px; }
+    div#ContentOverlord #ContentSidebar div .ColorSwatches a #red {
+      background-color: red;
+      color: red; }
+    div#ContentOverlord #ContentSidebar div .ColorSwatches a #orange {
+      background-color: orange;
+      color: orange; }
+    div#ContentOverlord #ContentSidebar div .ColorSwatches a #yellow {
+      background-color: yellow;
+      color: yellow; }
+    div#ContentOverlord #ContentSidebar div .ColorSwatches a #green {
+      background-color: green;
+      color: green; }
+    div#ContentOverlord #ContentSidebar div .ColorSwatches a #blue {
+      background-color: blue;
+      color: blue; }
+    div#ContentOverlord #ContentSidebar div .ColorSwatches a #purple {
+      background-color: purple;
+      color: purple; }
+    div#ContentOverlord #ContentSidebar div .ColorSwatches a #black {
+      background-color: black;
+      color: black; }
+    div#ContentOverlord #ContentSidebar div .ColorSwatches a #white {
+      background-color: white;
+      color: white; }
+    div#ContentOverlord #ContentSidebar div .ColorSwatches li {
+      width: 15px;
+      height: 15px;
+      border: 1px solid #E1E3DF;
+      display: inline;
+      border-radius: 3px;
+      font-size: 12px;
+      padding: 5px; }
 
 #ContentMain #CatWhiskey {
   float: left;
@@ -110,7 +145,7 @@ div#ContentOverlord #ContentSidebar {
   font-size: 13px; }
   #ContentMain #CatWhiskey a {
     color: #0092B5; }
-  #ContentMain #CatWhiskey a:hover {
+  #ContentMain #CatWhiskey li:hover {
     text-decoration: underline; }
 
 #ContentMain #SortBy {
@@ -118,6 +153,8 @@ div#ContentOverlord #ContentSidebar {
   margin: 6px 0;
   padding: 20px 0;
   font-size: 13px; }
+  #ContentMain #SortBy #Rel {
+    color: #0092B5; }
 
 #ContentMain #TheScript .SingleItem {
   width: 170px;
@@ -138,6 +175,8 @@ div#ContentOverlord #ContentSidebar {
 #ContentRelated {
   float: left;
   width: 500px; }
+  #ContentRelated a {
+    color: #0092B5; }
   #ContentRelated span {
     font-weight: bolder; }
   #ContentRelated .RelList {
@@ -149,6 +188,8 @@ div#ContentOverlord #ContentSidebar {
   float: left;
   font-size: 13px; }
   #ContentLooking span {
+    color: #0092B5; }
+  #ContentLooking a {
     color: #0092B5; }
 
 #ContentPages {
@@ -166,3 +207,5 @@ div#ContentOverlord #ContentSidebar {
     background-color: #F5F5F1; }
   #ContentPages a {
     color: #555555; }
+  #ContentPages a:hover {
+    text-decoration: underline; }

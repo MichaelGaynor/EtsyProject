@@ -30,6 +30,7 @@ nav{
       font-size: 30px;
       margin: 25px;
       margin-top: 25px;
+      margin-left: 50px;
       float: left;
       // background-color: blue;
       // display: inline-block;
@@ -40,12 +41,14 @@ nav{
       #SearchInput{
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px; 
+        border: 1px solid #888888;
       }
       #SearchButton{
         background-color: #34A8C4;
         color: #FFFFFF;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
+        border: none;
       }
     }
     #HorizontalTop{
@@ -141,9 +144,58 @@ div#ContentOverlord{
           padding-bottom: 6px;
           padding-top: 6px;
         }
+        .ColorSwatches{
+          // background-color: red;
+
+          a{
+            // background-color: magenta;
+            #red{
+              background-color: red;
+              color: red;
+            }
+            #orange{
+              background-color: orange;
+              color: orange;
+            }
+            #yellow{
+              background-color: yellow;
+              color: yellow;
+            }
+            #green{
+              background-color: green;
+              color: green;
+            }
+            #blue{
+              background-color: blue;
+              color: blue;
+            }
+            #purple{
+              background-color: purple;
+              color: purple;
+            }
+            #black{
+              background-color: black;
+              color: black;
+            }
+            #white{
+              background-color: white;
+              color: white;
+            }
+          }
+          li{
+            width: 15px;
+            height: 15px;
+            border: 1px solid #E1E3DF;
+            display: inline;
+            border-radius: 3px;
+            font-size: 12px;
+            padding: 5px;
+            }
+          }
+        }
       }
     }
-  }
+  
   #ContentMain{
     #CatWhiskey{
       float: left;
@@ -155,7 +207,7 @@ div#ContentOverlord{
         color: #0092B5;        
       }
       // background-color:orange;
-      a:hover{
+      li:hover{
         text-decoration: underline;
       }
     }
@@ -165,6 +217,9 @@ div#ContentOverlord{
       padding: 20px 0;
       font-size: 13px;
       // background-color: cyan;
+      #Rel{
+        color: #0092B5;
+      }
 
     }
     #TheScript{
@@ -192,6 +247,9 @@ div#ContentOverlord{
     // display: inline;
     // background-color: cyan;
     width: 500px;
+    a{
+      color: #0092B5;
+    }
     span{
       font-weight: bolder;
     }
@@ -207,6 +265,9 @@ div#ContentOverlord{
     float: left;
     font-size: 13px;
     span{
+      color: #0092B5;
+    }
+    a{
       color: #0092B5;
     }
   }
@@ -227,6 +288,9 @@ div#ContentOverlord{
     }
     a{
       color: #555555;
+    }
+    a:hover{
+      text-decoration: underline;
     }
 
   }

@@ -65,6 +65,10 @@ nav{
         border: 1px solid #0092B5;
         border-radius: 3px;
       }
+      #SignIn:hover{
+        text-decoration: none;
+        background-color: cyan;
+      }
     }
     #Cart{
       // background-color: cyan;
@@ -74,6 +78,12 @@ nav{
       margin-top: 35px;
       float: right;
       position: absolute;
+      display: inline-block;
+      height: 100px;
+      width: 30px;
+      a{
+        color: #989898;
+      }
     }
   }//End of #Search
 
@@ -107,7 +117,7 @@ div#ContentOverlord{
         border-radius: 3px;
         border: 1px solid #E1E3DF;
         background-color: #FFFFFF;
-        width: 245px;
+        width: 220px;
         // height: 408px;
         padding: 10px;
         li{
@@ -131,8 +141,12 @@ div#ContentOverlord{
       .Radio{
         color: #0092B5;
       }
-      .radio:hover{
+      .Radio:hover{
         text-decoration: underline;
+        margin: 0 5px;
+      }
+      .Money{
+        width: 40px;
       }
       select{
         padding: 5px;
@@ -141,7 +155,7 @@ div#ContentOverlord{
         border-radius: 3px;
         border: 1px solid #E1E3DF;
         background-color: #FFFFFF;
-        width: 245px;
+        width: 220px;
         height: 408;
         padding: 10px;
         font-size: 13px;
@@ -235,6 +249,7 @@ div#ContentOverlord{
         width: 170px;
         height: 190px;
         overflow: hidden;
+        text-overflow: ellipsis;
         background-color: #FFFFFF;
         margin: 10px;
         padding: 1px 6px 1px 6px;
@@ -242,6 +257,9 @@ div#ContentOverlord{
         border: 1px solid #666;
         border-radius: 3px;
         font-size: 12px;
+        .title{
+          width: 500px;
+        }
       }
     }
   }

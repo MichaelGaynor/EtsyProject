@@ -50,11 +50,19 @@ nav {
     nav #Search #HorizontalTop #SignIn {
       border: 1px solid #0092B5;
       border-radius: 3px; }
+    nav #Search #HorizontalTop #SignIn:hover {
+      text-decoration: none;
+      background-color: cyan; }
   nav #Search #Cart {
     color: #888888;
     margin-top: 35px;
     float: right;
-    position: absolute; }
+    position: absolute;
+    display: inline-block;
+    height: 100px;
+    width: 30px; }
+    nav #Search #Cart a {
+      color: #989898; }
   nav #CategoriesBar #Categories {
     float: right; }
     nav #CategoriesBar #Categories li {
@@ -74,7 +82,7 @@ div#ContentOverlord #ContentSidebar {
       border-radius: 3px;
       border: 1px solid #E1E3DF;
       background-color: #FFFFFF;
-      width: 245px;
+      width: 220px;
       padding: 10px; }
       div#ContentOverlord #ContentSidebar #ShowResultsFor ol#AllCategories li {
         color: #0092B5;
@@ -90,15 +98,18 @@ div#ContentOverlord #ContentSidebar {
     border: none; }
   div#ContentOverlord #ContentSidebar .Radio {
     color: #0092B5; }
-  div#ContentOverlord #ContentSidebar .radio:hover {
-    text-decoration: underline; }
+  div#ContentOverlord #ContentSidebar .Radio:hover {
+    text-decoration: underline;
+    margin: 0 5px; }
+  div#ContentOverlord #ContentSidebar .Money {
+    width: 40px; }
   div#ContentOverlord #ContentSidebar select {
     padding: 5px; }
   div#ContentOverlord #ContentSidebar div {
     border-radius: 3px;
     border: 1px solid #E1E3DF;
     background-color: #FFFFFF;
-    width: 245px;
+    width: 220px;
     height: 408;
     padding: 10px;
     font-size: 13px; }
@@ -165,6 +176,7 @@ div#ContentOverlord #ContentSidebar {
   width: 170px;
   height: 190px;
   overflow: hidden;
+  text-overflow: ellipsis;
   background-color: #FFFFFF;
   margin: 10px;
   padding: 1px 6px 1px 6px;
@@ -172,6 +184,8 @@ div#ContentOverlord #ContentSidebar {
   border: 1px solid #666;
   border-radius: 3px;
   font-size: 12px; }
+  #ContentMain #TheScript .SingleItem .title {
+    width: 500px; }
 
 #RelatedWhiskey {
   float: left;

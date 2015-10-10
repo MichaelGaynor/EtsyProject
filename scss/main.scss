@@ -23,7 +23,6 @@ nav{
   background-color: #FFFFFF;
   display: inline-block;
   #Search{
-    // border-bottom: 1px solid #E1E3DF;
     // display: inline-block;
     #Logo{
       color: #F56400;
@@ -32,8 +31,6 @@ nav{
       margin-top: 25px;
       margin-left: 50px;
       float: left;
-      // background-color: blue;
-      // display: inline-block;
     }
     #SearchBar{
       margin-top: 32px;
@@ -57,6 +54,7 @@ nav{
       width: 30%;
       float: left;
       margin-top: 35px;
+      position: relative;
       li{
         color: #0092B5;
       }
@@ -72,16 +70,15 @@ nav{
       // background-color: cyan;
       // height: 40px;
       color: #888888;
-      width: 50px;
+      // width: 50px;
       margin-top: 35px;
       float: right;
+      position: absolute;
     }
   }//End of #Search
 
 
-  #CategoriesBar{
-    border-bottom: 1px solid #E1E3DF;  
-    border-top: 1px solid #E1E3DF;      
+  #CategoriesBar{    
 
     #Categories{
       float: right;
@@ -136,6 +133,9 @@ div#ContentOverlord{
       }
       .radio:hover{
         text-decoration: underline;
+      }
+      select{
+        padding: 5px;
       }
       div{
         border-radius: 3px;
@@ -255,6 +255,7 @@ div#ContentOverlord{
     // display: inline;
     // background-color: cyan;
     width: 500px;
+    margin: 0;
     a{
       color: #0092B5;
     }

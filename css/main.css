@@ -177,6 +177,7 @@ div#ContentOverlord #ContentSidebar {
   height: 190px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   background-color: #FFFFFF;
   margin: 10px;
   padding: 1px 6px 1px 6px;
@@ -184,17 +185,26 @@ div#ContentOverlord #ContentSidebar {
   border: 1px solid #666;
   border-radius: 3px;
   font-size: 12px; }
-  #ContentMain #TheScript .SingleItem .title {
-    width: 500px; }
+  #ContentMain #TheScript .SingleItem .price {
+    color: #86C656;
+    float: right; }
+  #ContentMain #TheScript .SingleItem .price:before {
+    content: '$'; }
+  #ContentMain #TheScript .SingleItem .currency-code {
+    color: #86C656;
+    float: right; }
+  #ContentMain #TheScript .SingleItem .currency-code:before {
+    content: ' '; }
 
 #RelatedWhiskey {
   float: left;
-  width: 500px; }
+  width: 690px;
+  margin-left: 10px; }
 
 #ContentRelated {
   float: left;
-  width: 500px;
-  margin: 0; }
+  width: 690px;
+  padding: 0; }
   #ContentRelated a {
     color: #0092B5; }
   #ContentRelated span {

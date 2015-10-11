@@ -87,7 +87,7 @@
           <p>Shop Location</p>
           <input type="radio"><a href="#" class="Radio">Anywhere</a><br>
           <input type="radio"><a href="#" class="Radio">United States</a><br>
-          <p><a href="#">Choose a custom location</a></p>
+          <p><a href="#" id="Custom">Choose a custom location</a></p>
           <hr>
           <p>Ship To</p>
           <select>
@@ -105,12 +105,12 @@
       </div>
       <div id="TheScript">
         <script type="text/template" id="info-template">
-          <div class="SingleItem">
+          <div class="SingleItem" title:"<%= title %>">
             <img src="<%= Images[0].url_170x135 %>">
             <div class="title"><%= title %></div>
             <div class="url"><%= url %></div>
-            <div class="price"><%= price %></div>
             <div class="currency-code"><%= currency_code %></div>
+            <div class="price"><%= price %></div>
           </div>
         </script>
       </div>  

@@ -250,6 +250,7 @@ div#ContentOverlord{
         height: 190px;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
         background-color: #FFFFFF;
         margin: 10px;
         padding: 1px 6px 1px 6px;
@@ -258,22 +259,36 @@ div#ContentOverlord{
         border-radius: 3px;
         font-size: 12px;
         .title{
-          width: 500px;
+        }
+        .price{
+          color: #86C656;
+          float: right;
+        }
+        .price:before{
+          content: '$';
+        }
+        .currency-code{
+          color: #86C656;
+          float: right;
+        }
+        .currency-code:before{
+          content: ' ';
         }
       }
     }
   }
   #RelatedWhiskey{
     float: left;
-    width: 500px;
+    width: 690px;
+    margin-left: 10px;
     // margin-left: 40px;
   }
   #ContentRelated{
     float: left;
     // display: inline;
     // background-color: cyan;
-    width: 500px;
-    margin: 0;
+    width: 690px;
+    padding: 0;
     a{
       color: #0092B5;
     }

@@ -30,5 +30,6 @@ $('#TheScript').append(freshHTML);
 
 });
 
+// console.dir(etsy)
 
 }());

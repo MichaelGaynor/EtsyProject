@@ -93,9 +93,10 @@ nav{
 
 
   #CategoriesBar{    
-
     #Categories{
       float: right;
+      border-top: 1px solid #E1E3DF;
+      padding-top: 10px;
       li{
         color: #585858;
         font-weight: lighter;

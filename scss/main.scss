@@ -39,6 +39,7 @@ nav{
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px; 
         border: 1px solid #888888;
+        margin-left: 10px;
       }
       #SearchButton{
         background-color: #34A8C4;
@@ -46,6 +47,7 @@ nav{
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         border: none;
+        margin-left: -4px;
       }
     }
     #HorizontalTop{
@@ -54,7 +56,8 @@ nav{
       width: 30%;
       float: left;
       margin-top: 35px;
-      position: relative;
+      margin-left: 40px;
+      // position: relative;
       li{
         color: #0092B5;
       }
@@ -70,18 +73,19 @@ nav{
         background-color: cyan;
       }
     }
-    #Cart{
-      // background-color: cyan;
+    #cart{
+      // background-color: magenta;
       // height: 40px;
       color: #888888;
       // width: 50px;
-      margin-top: 35px;
+      margin-top: 20px;
+      margin-right: 50px;
       float: right;
-      position: absolute;
+      // position: absolute;
       display: inline-block;
-      height: 100px;
+      height: 50px;
       width: 30px;
-      a{
+      #CartLink{
         color: #989898;
       }
     }
@@ -147,6 +151,12 @@ div#ContentOverlord{
       }
       .Money{
         width: 40px;
+      }
+      #Custom{
+        color: #0092B5;
+      }
+      #Custom:hover{
+        text-decoration: underline;
       }
       select{
         padding: 5px;
@@ -266,6 +276,9 @@ div#ContentOverlord{
         }
         .price:before{
           content: '$';
+        }
+        .price:after{
+          content: ' ';
         }
         .currency-code{
           color: #86C656;

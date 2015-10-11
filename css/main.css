@@ -30,19 +30,21 @@ nav {
     nav #Search #SearchBar #SearchInput {
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
-      border: 1px solid #888888; }
+      border: 1px solid #888888;
+      margin-left: 10px; }
     nav #Search #SearchBar #SearchButton {
       background-color: #34A8C4;
       color: #FFFFFF;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
-      border: none; }
+      border: none;
+      margin-left: -4px; }
   nav #Search #HorizontalTop {
     text-align: right;
     width: 30%;
     float: left;
     margin-top: 35px;
-    position: relative; }
+    margin-left: 40px; }
     nav #Search #HorizontalTop li {
       color: #0092B5; }
     nav #Search #HorizontalTop li:hover {
@@ -53,15 +55,15 @@ nav {
     nav #Search #HorizontalTop #SignIn:hover {
       text-decoration: none;
       background-color: cyan; }
-  nav #Search #Cart {
+  nav #Search #cart {
     color: #888888;
-    margin-top: 35px;
+    margin-top: 20px;
+    margin-right: 50px;
     float: right;
-    position: absolute;
     display: inline-block;
-    height: 100px;
+    height: 50px;
     width: 30px; }
-    nav #Search #Cart a {
+    nav #Search #cart #CartLink {
       color: #989898; }
   nav #CategoriesBar #Categories {
     float: right; }
@@ -103,6 +105,10 @@ div#ContentOverlord #ContentSidebar {
     margin: 0 5px; }
   div#ContentOverlord #ContentSidebar .Money {
     width: 40px; }
+  div#ContentOverlord #ContentSidebar #Custom {
+    color: #0092B5; }
+  div#ContentOverlord #ContentSidebar #Custom:hover {
+    text-decoration: underline; }
   div#ContentOverlord #ContentSidebar select {
     padding: 5px; }
   div#ContentOverlord #ContentSidebar div {
@@ -190,6 +196,8 @@ div#ContentOverlord #ContentSidebar {
     float: right; }
   #ContentMain #TheScript .SingleItem .price:before {
     content: '$'; }
+  #ContentMain #TheScript .SingleItem .price:after {
+    content: ' '; }
   #ContentMain #TheScript .SingleItem .currency-code {
     color: #86C656;
     float: right; }

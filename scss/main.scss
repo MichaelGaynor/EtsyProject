@@ -234,7 +234,7 @@ div#ContentOverlord{
       margin-top: 6px;
       margin-left: 10px;
       width: 470px;
-      padding: 20px 0;
+      padding: 20px 0 0 0;
       font-size: 13px;
       a{
         color: #0092B5;        
@@ -246,8 +246,8 @@ div#ContentOverlord{
     }
     #SortBy{
       float: left;
-      margin: 6px 0;
-      padding: 20px 0;
+      margin: 6px 0 0 0;
+      padding: 20px 0 0 0;
       font-size: 13px;
       // background-color: cyan;
       #Rel{
@@ -269,7 +269,17 @@ div#ContentOverlord{
         border: 1px solid #666;
         border-radius: 3px;
         font-size: 12px;
+        div{
+          padding: 2px 0;
+        }
         .title{
+        }
+        .url{
+          float: left;
+          // color: #F5F5F1;
+          a{
+            color: #AAAAAA;
+          }
         }
         .price{
           color: #86C656;
@@ -295,6 +305,7 @@ div#ContentOverlord{
     float: left;
     width: 690px;
     margin-left: 10px;
+    padding: 0;
     // margin-left: 40px;
   }
   #ContentRelated{
@@ -302,7 +313,10 @@ div#ContentOverlord{
     // display: inline;
     // background-color: cyan;
     width: 690px;
-    padding: 0;
+    padding-left: 12px;
+    ul{
+      padding: 0;
+    }
     a{
       color: #0092B5;
     }

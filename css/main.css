@@ -165,7 +165,7 @@ div#ContentOverlord #ContentSidebar {
   margin-top: 6px;
   margin-left: 10px;
   width: 470px;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   font-size: 13px; }
   #ContentMain #CatWhiskey a {
     color: #0092B5; }
@@ -174,8 +174,8 @@ div#ContentOverlord #ContentSidebar {
 
 #ContentMain #SortBy {
   float: left;
-  margin: 6px 0;
-  padding: 20px 0;
+  margin: 6px 0 0 0;
+  padding: 20px 0 0 0;
   font-size: 13px; }
   #ContentMain #SortBy #Rel {
     color: #0092B5; }
@@ -193,6 +193,12 @@ div#ContentOverlord #ContentSidebar {
   border: 1px solid #666;
   border-radius: 3px;
   font-size: 12px; }
+  #ContentMain #TheScript .SingleItem div {
+    padding: 2px 0; }
+  #ContentMain #TheScript .SingleItem .url {
+    float: left; }
+    #ContentMain #TheScript .SingleItem .url a {
+      color: #AAAAAA; }
   #ContentMain #TheScript .SingleItem .price {
     color: #86C656;
     float: right; }
@@ -209,12 +215,15 @@ div#ContentOverlord #ContentSidebar {
 #RelatedWhiskey {
   float: left;
   width: 690px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding: 0; }
 
 #ContentRelated {
   float: left;
   width: 690px;
-  padding: 0; }
+  padding-left: 12px; }
+  #ContentRelated ul {
+    padding: 0; }
   #ContentRelated a {
     color: #0092B5; }
   #ContentRelated span {

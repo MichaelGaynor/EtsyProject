@@ -257,3 +257,5 @@ div#ContentOverlord #ContentSidebar {
     background-color: #F5F5F1; }
   #ContentPages a {
     color: #555555; }
+  #ContentPages a:hover {
+    text-decoration: underline; }
